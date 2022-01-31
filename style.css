@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #463f3a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f3ee;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    background-color: #bcb8b1;
+    width: 600px;
+    height: 600px;
+    padding: 5px;
+    border-radius: 25px;
+    border: 4px #463f3a solid;
+}
+
+.painel-pontos {
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+table.placar {
+    width: 350px;
+}
+
+#jogador1, #jogador2, #pontos_jog_X, #pontos_jog_O {
+    text-align: center;
+}
+
+#tabuleiro {
+    height: 340px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.campo {  
+    width: 160px;
+    height: 110px;  
+    background-color: #fff;
+    border: 2px outset #463f3a;
+}
+
+.campo:hover {
+    background-color: #463f3a49;
+}
+
+.dados_jogadores {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.dados_jogadores button {
+    display: block;
+}
+
+#vezDoJogador, #jogadorVencedor {
+    text-align: center;
+    display: none;
+}
+
+#vezDoJogador button, #jogadorVencedor button {
+    display: inline;
+}
+
+button {
+    width: 140px;
+    height: 50px;
+    margin: 10px auto;
+    color: #463f3a;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #463f3a;
+}
+
+button:hover {
+    background-color: #463f3a;
+    border-color: #f4f3ee;
+    color: #f4f3ee;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+

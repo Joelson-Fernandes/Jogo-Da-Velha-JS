@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>jogo Da Velha</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="caixa">
+
+            <header class="painel-pontos">
+                <table class="placar">
+                    <tr>
+                        <th>Jogadores</th>
+                        <th>Pontos</th>
+                    </tr>
+                    <tr>
+                        <td><input id="jogador1" type="text" disabled></td>
+                        <td><input id="pontos_jog_X" type="text" value="0" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input id="jogador2" type="text" disabled></td>
+                        <td><input id="pontos_jog_O" type="text" value="0" disabled></td>
+                    </tr>
+                </table>
+            </header>
+
+            <section id="tabuleiro">
+                <ul>
+                    <li class="campo" value="1"></li>
+                    <li class="campo" value="2"></li>
+                    <li class="campo" value="3"></li>
+                </ul>
+                <ul>
+                    <li class="campo" value="4"></li>
+                    <li class="campo" value="5"></li>
+                    <li class="campo" value="6"></li>
+                </ul>
+                <ul>
+                    <li class="campo" value="7"></li>
+                    <li class="campo" value="8"></li>
+                    <li class="campo" value="9"></li>
+                </ul>
+            </section>
+
+            <section class="dados_jogadores">
+                <div id="inserir_jogadores">
+                    <h3 style="text-align: center;">Insira os nomes dos jogadores</h3>
+                    <label for="jogador_X">Jogador X</label>
+                    <input type="text" id="jogador_X"><br>
+                    <label for="jogador_O">Jogador O</label>
+                    <input type="text" id="jogador_O">
+                    <button onclick="verificaJogadores()">Iniciar</button>
+                </div>
+
+                <div id="vezDoJogador">
+                    <h3>vez de<span id="jogador"></span></h3><hr>
+                    <button id="restart">Restart</button>
+                </div>
+
+                 <div class="jogadorVencedor" id="jogadorVencedor">
+                     <h3><span id="vencedor"></span> GANHOU!!!</h3><hr>
+                    <button id="inicio">Inicio</button>
+                    <button id="jogarNovamente">Jogar novamente</button>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+    <script src="jogoVelha.js"></script>
+</body>
+</html>
